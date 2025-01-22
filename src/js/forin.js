@@ -1,4 +1,4 @@
-export default  orderByProps = (obj, order = ['']) => {
+const orderByProps = (obj, order = ['']) => {
     const keys = [
     ...order,
     ...Object.keys(obj)
@@ -11,3 +11,5 @@ export default  orderByProps = (obj, order = ['']) => {
         value: obj[key]
     }));
 }
+
+export default  orderByProps
